@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ohona Rahman — Portfolio</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+    <header class="container nav">
+        <a href="index.html" class="brand">ohona.me</a>
+        <nav>
+            <ul>
+                <li><a href="#work">work</a></li>
+                <li><a href="#about">about</a></li>
+                <li><a href="assets/Ohona-Rahman-Resume.pdf" target="_blank" rel="noopener noreferrer">resume</a></li>
+                <li><a href="#contact">contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main>
+        <section class="container hero">
+            <div class="hero-content">
+                <h1>Hi, I'm Ohona — a UI/UX & Graphic Design student at Drexel.</h1>
+                <p>I build intuitive interfaces and design engaging digital experiences.</p>
+                <a href="#work" class="btn">See my work</a>
+                <a href="#contact" class="btn">Contact me</a>
+            </div>
+            <div class="hero-visual">
+                <img src="assets/images/pixel_ohona.png" alt="Drawing of Ohona"> 
+            </div>
+        </section>
+
+        <section id="work" class="container">
+            <h2>Projects</h2>
+            <div class="grid">
+                
+                <article class="card">
+                    <h3>SafePlate</h3>
+                    <p>Designed and prototyped an allergen-friendly restaurant finder app during my UI/UX internship.</p>
+                    <button class="btn btn-small" onclick="openModal('safeplate')">View Project</button>
+                </article>
+
+                <article class="card">
+                    <h3>Concert App</h3>
+                    <p>A concert discovery app featuring live event info based on user location and preferences.</p>
+                    <button class="btn btn-small" onclick="openModal('concert')">View Project</button>
+                </article>
+
+                <article class="card">
+                    <h3>Hack4Impact</h3>
+                    <p>Contributed to a nonprofit web project, refining layouts and ensuring accessibility standards.</p>
+                    <button class="btn btn-small" onclick="openModal('hack4impact')">View Project</button>
+                </article>
+
+            </div>
+        </section>
+
+        <section id="about" class="container about-section">
+            <div class="about-layout">
+                
+                <div class="about-content">
+                    <div class="intro-box">
+                        <h2>About Me</h2>
+                        <p>Hello! I'm Ohona Rahman — a sophomore double-majoring in UI/UX and Graphic Design, based in Philly. I love taking complex problems and turning them into simple, beautiful designs. When I'm not designing or studying, I'm usually hanging out with my cat, Kofi.</p>
+                    </div>
+                    
+                    <div class="info-box">
+                        <h3>EDUCATION</h3>
+                        <p class="accent-text">2024 - PRESENT</p>
+                        <p><strong>B.S. User Experience & Interaction Design</strong></p>
+                        <p>Drexel University, Philadelphia PA</p>
+                    </div>
+
+                    <div class="info-box">
+                        <h3>SOFTWARES</h3>
+                        <div class="software-grid">
+                            <span class="software-icon">Figma</span>
+                            <span class="software-icon">Ps</span>
+                            <span class="software-icon">Ai</span>
+                            <span class="software-icon">Xd</span>
+                            <span class="software-icon">Mi</span>
+                        </div>
+                    </div>
+
+                    <div class="info-box">
+                        <h3>INTERESTS</h3>
+                        <p>Digital Art • Video Games • Attack on Titan • Baking • Cafes</p>
+                    </div>
+                </div>
+
+                <div class="about-image">
+                    <img src="assets/images/polaroid_ohona.png" alt="Ohona Rahman Portfolio Photo">
+                </div>
+
+            </div>
+        </section>
+
+        <section id="contact" class="container contact-section">
+            <div class="contact-grid">
+                <div class="contact-text">
+                    <h2>Contact Me</h2>
+                    <p>I'm currently looking for internship opportunities. Feel free to reach out!</p>
+                    <p>Email: <a href="mailto:or79@drexel.edu">or79@drexel.edu</a></p>
+                </div>
+                
+                <form action="https://formspree.io/f/mreyjeeb" method="POST" class="contact-form">
+                    <div class="input-group">
+                        <label for="name">Name</label>
+                        <input type="text" name="name" id="name" required>
+                    </div>
+                    <div class="input-group">
+                        <label for="email">Email</label>
+                        <input type="email" name="email" id="email" required>
+                    </div>
+                    <div class="input-group">
+                        <label for="message">Message</label>
+                        <textarea name="message" id="message" rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="btn">Send Message</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer class="container foot-flex">
+        <p>&copy; 2026 Ohona Rahman</p>
+        <div class="footer-links">
+            <a href="https://www.linkedin.com/in/ohona-rahman" target="_blank">LinkedIn</a>
+            <a href="https://github.com/ohona-rahman" target="_blank">GitHub</a>
+        </div>
+    </footer>
+
+    <div id="project-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-btn" onclick="closeModal()">&times;</span>
+            <h2 id="modal-title">Project Title</h2>
+            <p id="modal-desc">Project description goes here.</p>
+        </div>
+    </div>
+
+    <script src="scripts/app.js"></script> 
+</body>
+</html>
